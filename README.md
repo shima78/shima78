@@ -2,9 +2,9 @@
 <h3 align="center">A passionate software engineer</h3>
 
 
-- 🔭 I’m currently working on **TripMentor**
+- 🔭 I’m currently working on **Generative AI**
 
-- 🌱 I’m currently learning **Nest.js**
+- 🌱 I’m currently learning **Software Design**
 
 - 📫 How to reach me **zahramohammadpour497@gmail.com**
 
