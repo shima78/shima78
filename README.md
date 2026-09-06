@@ -1,8 +1,6 @@
 <!-- ═══════════════════════════════  HEADER  ═══════════════════════════════ -->
 
-<a href="https://github.com/shima78">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:8E2DE2,100:4A00E0&height=200&section=header&text=Zahra%20Mohammadpour&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20%C2%B7%20AI%20%26%20LLM%20Application%20Developer&descAlignY=58&descSize=18" alt="header" />
-</a>
+
 
 <p align="center">
   <a href="https://github.com/shima78">
@@ -115,9 +113,3 @@ const zahra = {
 </p>
 
 <!-- ═══════════════════════════════  FOOTER  ═══════════════════════════════ -->
-
-<p align="center">
-  <em>Thanks for stopping by — feel free to explore the repositories below or reach out.</em>
-</p>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:4A00E0,100:8E2DE2&height=120&section=footer" alt="footer" />
