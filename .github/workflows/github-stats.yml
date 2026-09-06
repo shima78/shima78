@@ -1,17 +1,8 @@
-# Regenerates GitHub stats as self-hosted SVGs committed to /generated,
-# so the README no longer depends on a third-party rendering service.
+# Regenerates assets/stats.svg from the GitHub API once a day and commits it
+# if it changed. No personal access token or third-party service required —
+# the built-in GITHUB_TOKEN can read the public data the card shows.
 #
-# One-time setup:
-#   1. Create a classic Personal Access Token (github.com/settings/tokens)
-#      with the `repo` scope. Name it anything.
-#   2. Add it to this repo as an Actions secret named ACCESS_TOKEN
-#      (Settings -> Secrets and variables -> Actions -> New repository secret).
-#   3. Run this workflow once from the Actions tab ("Run workflow"), or wait
-#      for the daily schedule. It writes generated/overview.svg and
-#      generated/languages.svg (both adapt to light/dark automatically).
-#   4. In README.md, swap the <picture> block for:
-#        <img src="https://raw.githubusercontent.com/shima78/shima78/main/generated/overview.svg" />
-#        <img src="https://raw.githubusercontent.com/shima78/shima78/main/generated/languages.svg" />
+# Run it on demand from the Actions tab ("Run workflow") any time.
 
 name: GitHub Stats
 
@@ -27,11 +18,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Generate stats images
-        uses: jstrieb/github-stats@master
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate stats card
         env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          EXCLUDE_FORKED_REPOS: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/gen-stats.mjs
+
+      - name: Commit if changed
+        run: |
+          if [[ -n "$(git status --porcelain assets/stats.svg)" ]]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets/stats.svg
+            git commit -m "chore: refresh GitHub stats card"
+            git push
+          else
+            echo "No change."
+          fi

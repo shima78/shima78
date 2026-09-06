@@ -58,19 +58,13 @@ prompt design, tool-calling agents, evaluation, and rollout. Frontend home base 
 ### 📊 Activity
 
 <!--
-  Theme-aware: the <picture> below serves a dark card in dark mode, light in light mode.
-  These render from github-readme-stats (a shared service) and can briefly 404 when it
-  is rate-limited. For a zero-dependency version, enable .github/workflows/github-stats.yml
-  (see that file's header) and swap in the two committed SVGs from /generated instead.
+  Self-hosted card: assets/stats.svg is generated from the GitHub API and
+  committed to this repo, so it renders without depending on a third-party
+  service. The <style> block inside the SVG makes it follow light/dark mode.
+  Refresh it with .github/workflows/github-stats.yml (daily) or by running
+  `node scripts/gen-stats.mjs` locally.
 -->
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=shima78&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=tokyonight&card_width=450" />
-    <img height="170" src="https://github-readme-stats.vercel.app/api?username=shima78&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&card_width=450" alt="GitHub stats" />
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=shima78&layout=compact&langs_count=6&hide_border=true&theme=tokyonight" />
-    <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shima78&layout=compact&langs_count=6&hide_border=true" alt="Top languages" />
-  </picture>
+  <img src="https://raw.githubusercontent.com/shima78/shima78/main/assets/stats.svg" alt="Zahra's GitHub statistics: 38 repositories, 26 followers, 86 commits in the past year; top languages Python, JavaScript, CSS, HTML, Vue, TypeScript" width="470" />
 </p>
