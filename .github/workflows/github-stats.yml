@@ -1,0 +1,37 @@
+# Regenerates GitHub stats as self-hosted SVGs committed to /generated,
+# so the README no longer depends on a third-party rendering service.
+#
+# One-time setup:
+#   1. Create a classic Personal Access Token (github.com/settings/tokens)
+#      with the `repo` scope. Name it anything.
+#   2. Add it to this repo as an Actions secret named ACCESS_TOKEN
+#      (Settings -> Secrets and variables -> Actions -> New repository secret).
+#   3. Run this workflow once from the Actions tab ("Run workflow"), or wait
+#      for the daily schedule. It writes generated/overview.svg and
+#      generated/languages.svg (both adapt to light/dark automatically).
+#   4. In README.md, swap the <picture> block for:
+#        <img src="https://raw.githubusercontent.com/shima78/shima78/main/generated/overview.svg" />
+#        <img src="https://raw.githubusercontent.com/shima78/shima78/main/generated/languages.svg" />
+
+name: GitHub Stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "37 2 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Generate stats images
+        uses: jstrieb/github-stats@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          EXCLUDE_FORKED_REPOS: true
