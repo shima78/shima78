@@ -18,14 +18,14 @@
 
 ### 👋 About
 
-I build web applications and ship **LLM-powered features end to end** — retrieval,
+I build web applications and ship **LLM-powered features end to end**. retrieval,
 prompt design, tool-calling agents, evaluation, and rollout. Frontend home base is
 **Vue + TypeScript**; I move to **Python** when the work is data or models.
 
-- **Now** — generative-AI product features: RAG, agents, structured &amp; streamed output
-- **Toolbox** — OpenAI &amp; Anthropic APIs, LangChain, embeddings + vector search, PyTorch
-- **How I work** — AI-assisted development, eval-driven iteration, small reviewable PRs
-- **Learning** — software design &amp; systematic LLM evaluation
+- **Now**  generative-AI product features: RAG, agents, structured &amp; streamed output
+- **Toolbox** OpenAI &amp; Anthropic APIs, LangChain, embeddings + vector search, PyTorch
+- **How I work** AI-assisted development, eval-driven iteration, small reviewable PRs
+- **Learning** software design &amp; systematic LLM evaluation
 
 ---
 
