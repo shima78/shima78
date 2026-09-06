@@ -55,16 +55,4 @@ prompt design, tool-calling agents, evaluation, and rollout. Frontend home base 
 
 ---
 
-### 📊 Activity
 
-<!--
-  Self-hosted card: assets/stats.svg is generated from the GitHub API and
-  committed to this repo, so it renders without depending on a third-party
-  service. The <style> block inside the SVG makes it follow light/dark mode.
-  Refresh it with .github/workflows/github-stats.yml (daily) or by running
-  `node scripts/gen-stats.mjs` locally.
--->
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/shima78/shima78/main/assets/stats.svg" alt="Zahra's GitHub statistics: 38 repositories, 26 followers, 86 commits in the past year; top languages Python, JavaScript, CSS, HTML, Vue, TypeScript" width="470" />
-</p>
