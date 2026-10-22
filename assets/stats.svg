@@ -20,7 +20,7 @@
   </style>
   <rect class="bg" x="0.5" y="0.5" rx="8" width="469" height="237" />
   <text x="28" y="36" class="title">GitHub Overview</text>
-  <text x="28" y="52" class="name">@shima78 · updated 2026-10-21</text>
+  <text x="28" y="52" class="name">@shima78 · updated 2026-10-22</text>
   
     <text x="28" y="74" class="label">Repositories</text>
     <text x="228" y="74" class="value" text-anchor="end">37</text>
@@ -29,27 +29,27 @@
     <text x="28" y="104" class="label">Forks</text>
     <text x="228" y="104" class="value" text-anchor="end">4</text>
     <text x="248" y="104" class="label">Followers</text>
-    <text x="448" y="104" class="value" text-anchor="end">27</text>
+    <text x="448" y="104" class="value" text-anchor="end">28</text>
     <text x="28" y="134" class="label">Commits (past year)</text>
-    <text x="228" y="134" class="value" text-anchor="end">176</text>
+    <text x="228" y="134" class="value" text-anchor="end">179</text>
     <text x="248" y="134" class="label">Pull requests</text>
     <text x="448" y="134" class="value" text-anchor="end">2</text>
   <line x1="28" y1="153" x2="442" y2="153" class="divider" />
   <text x="28" y="171" class="name">Top languages</text>
   <rect class="track" x="28" y="178" rx="4.5" width="414" height="9" />
   <clipPath id="r"><rect x="28" y="178" rx="4.5" width="414" height="9" /></clipPath>
-  <g clip-path="url(#r)"><rect x="28.0" y="178" width="134.7" height="9" fill="#3572A5" /><rect x="162.7" y="178" width="114.6" height="9" fill="#3178c6" /><rect x="277.3" y="178" width="45.3" height="9" fill="#41b883" /><rect x="322.6" y="178" width="44.2" height="9" fill="#e34c26" /><rect x="366.8" y="178" width="26.7" height="9" fill="#f1e05a" /><rect x="393.5" y="178" width="25.5" height="9" fill="#c6538c" /></g>
+  <g clip-path="url(#r)"><rect x="28.0" y="178" width="136.7" height="9" fill="#3572A5" /><rect x="164.7" y="178" width="113.8" height="9" fill="#3178c6" /><rect x="278.5" y="178" width="45.0" height="9" fill="#41b883" /><rect x="323.5" y="178" width="43.8" height="9" fill="#e34c26" /><rect x="367.3" y="178" width="26.5" height="9" fill="#f1e05a" /><rect x="393.8" y="178" width="25.3" height="9" fill="#c6538c" /></g>
   
     <circle cx="32" cy="199" r="4" fill="#3572A5" />
-    <text x="42" y="202" class="legend">Python 32.5%</text>
+    <text x="42" y="202" class="legend">Python 33.0%</text>
     <circle cx="180" cy="199" r="4" fill="#3178c6" />
-    <text x="190" y="202" class="legend">TypeScript 27.7%</text>
+    <text x="190" y="202" class="legend">TypeScript 27.5%</text>
     <circle cx="328" cy="199" r="4" fill="#41b883" />
     <text x="338" y="202" class="legend">Vue 10.9%</text>
     <circle cx="32" cy="215" r="4" fill="#e34c26" />
-    <text x="42" y="218" class="legend">HTML 10.7%</text>
+    <text x="42" y="218" class="legend">HTML 10.6%</text>
     <circle cx="180" cy="215" r="4" fill="#f1e05a" />
-    <text x="190" y="218" class="legend">JavaScript 6.5%</text>
+    <text x="190" y="218" class="legend">JavaScript 6.4%</text>
     <circle cx="328" cy="215" r="4" fill="#c6538c" />
-    <text x="338" y="218" class="legend">SCSS 6.2%</text>
+    <text x="338" y="218" class="legend">SCSS 6.1%</text>
 </svg>
